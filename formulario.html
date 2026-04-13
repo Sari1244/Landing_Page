@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+        <link rel="stylesheet" href="CSS/formulario.css">
+    <link rel="shortcut icon" href="imagenes/descarga-en-la-nube.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+   <nav class="nav">
+        <div class="nav_logo">
+            <img src="imagenes/logo.svg" alt="">
+            
+        </div>
+    <div class="nav_right">
+        <a href="registro.html">Registrate</a>
+        <label for="menu-toggle" class="nav_target">
+            <img src="imagenes/menu.png">
+        </label>
+    </div>
+        
+        <input type="checkbox" id="menu-toggle" hidden> 
+        
+        <div class="nav_links" id="menu">
+            <label for="menu-toggle" class="nav_link"><a href="index.html">Inicio</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="servicios.html">Servicios</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="nosotros.html">Nosotros</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="contacto.html">Contacto</a></label>
+
+        </div>
+        
+    </nav>  
+
+    <main>
+
+
+        <form class="formulario" action="">
+
+        <section class="titulo">
+            <h2>Iniciar Sesión</h2>
+            <p>Por favor Ingresa tus datos</p>
+        </section>
+
+         <div class="form">
+               <label for="email">
+                <input type="email" id="email" name="email" placeholder="Correo">
+            </label>
+
+            <label for="contrasena">
+                <input type="password" id="contrasena" name="contrasena" required minlength="8" maxlength="20" placeholder="Contraseña">
+            </label><br>
+         </div>
+
+            <button class="sesion" type="input"><a href="index.html">Iniciar Sesión</a></button>
+
+            <span>¿No te has registrado?</span>
+            <a href="registro.html">Registrate</a>
+        </form>
+
+        <a href="https://wa.me/573001234567" class="whatsapp" target="_blank">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </main>
+
+       <footer id="footer">
+         &copy; 2026 Todos los derechos reservados. Global Virtual Opportunities Inc., EE. UU. <br><br>
+        <div class="redes">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="fa-brands fa-x-twitter"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        </div> 
+   </footer>
+</body>
+</html>

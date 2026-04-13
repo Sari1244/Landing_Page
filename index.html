@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GotBackup</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="imagenes/descarga-en-la-nube.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav_logo">
+            <img src="imagenes/logo.svg" alt="">
+            
+        </div>
+    <div class="nav_right">
+        <a href="formulario.html">Iniciar Sesión</a>
+        <label for="menu-toggle" class="nav_target">
+            <img src="imagenes/menu.png">
+        </label>
+    </div>
+        
+        <input type="checkbox" id="menu-toggle" hidden> 
+        
+        <div class="nav_links" id="menu">
+            <label for="menu-toggle" class="nav_link"><a href="index.html">Inicio</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="servicios.html">Servicios</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="nosotros.html">Nosotros</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="registro.html">Registrate</a></label>
+            <label for="menu-toggle" class="nav_link"><a href="contacto.html">Contacto</a></label>
+        </div>
+        
+    </nav>
+
+
+   <main id="main">
+    <section class="banner">
+        <div class="texto_banner">
+            <h1>Protege tus archivos en la nube</h1>
+            <p>Accede a tu información desde cualquier lugar.</p><br>
+            <a href="servicios.html">Empezar Ahora</a>
+        </div>
+        <div class="imagen_banner">
+            <img src="imagenes/pngwing.com.png" alt="">
+        </div>
+    </section>
+
+    <!-- Carrusel -->
+
+<section class="contenedor-carrusel">
+            <div id="carrusel1">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Tu1TJ-iEqHw?si=rWkqCX0WMw9if19D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="flecha derecha" href="#carrusel2">></a>
+                <a class="flecha izquierda" href="#carrusel3"><</a>
+            </div>
+            <div id="carrusel2">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vt-gas3BlSM?si=JxUGBKn5WhJjXuvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="flecha izquierda" href="#carrusel1"><</a>
+                <a class="flecha derecha" href="#carrusel3">></a>
+            </div>
+            <div id="carrusel3">
+                <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8t1g0vu1LFw?si=16yv4SWNMuszmHNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <a class="flecha izquierda" href="#carrusel2"><</a>
+                <a class="flecha derecha" href="#carrusel1">></a>
+            </div>
+
+        </section>
+
+              <section class="desplazar">
+            <a href="#carrusel1"></a>
+            <a href="#carrusel2"></a>
+            <a href="#carrusel3"></a>
+        </section>
+
+    <div class="beneficios">
+        <h2>Creemos que usted, y solo usted, debe controlar sus datos.</h2>
+    <p></p>
+    </div>
+
+<!-- Tarjetas -->
+    <section class="tarjetas">
+
+        
+
+        <div class="tarjeta">
+            <img src="imagenes/tarjeta1.jpg" alt=""><br><br>
+            <div class="texto_tarjetas">
+                
+                <h2>Almacena todos tus activos digitales de forma segura.</h2>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="imagenes/tarjeta2.jpg" alt=""><br><br>
+            <div class="texto_tarjetas">
+                
+                <h2>¡Tú controlas tus datos!¡Nosotros no!</h2>
+            </div>
+        </div>
+
+        <div class="tarjeta">
+            <img src="imagenes/tarjeta3.png" alt=""><br><br>
+            <div class="texto_tarjetas">
+                
+                <h2>Sincroniza automáticamente tus datos.</h2>
+            </div>
+        </div>
+
+
+
+    </section>
+    <a href="https://wa.me/573001234567" class="whatsapp" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+    </a>
+    <hr>
+
+    <!-- <section class="nosotros" id="nosotros">
+        <img src="imagenes/informacion.jpg" alt="">
+    
+
+        <aside class="aside">
+            <h2>¿Por qué nosotros?</h2><br>
+                <p>GotBackup es un servicio desarrollado por GVO (Global Virtual Opportunities), una empresa de marketing digital y software fundada en 1998 en Canadá. Con el tiempo, expandieron sus operaciones y construyeron un centro de datos en Texas en 2007 para mejorar su infraestructura.
+
+            En GotBackup, nuestra máxima prioridad es la seguridad de sus datos . La protección activa y pasiva de GotBackup está diseñada para proteger los datos del usuario mediante múltiples capas de seguridad, incluyendo el cifrado AES de 256 bits en todas partes.
+
+                Cifrado AES de 256 bits
+                Protocolos SSL/TLS
+                Autenticación de dos factores (2FA)
+                Control de versiones de archivos
+
+                Además, cuentan con sistemas avanzados como detección de accesos sospechosos y múltiples capas de protección para garantizar la seguridad de la información.</p>
+        </aside>
+    </section>
+<hr> -->
+
+<!-- Tarjetas Planes -->
+         <div class="texto_venta">
+            <p class="text-1">Obtén 6 TB de almacenamiento y 6 cuentas separadas por</p>
+            <p class="text-2">SOLO $9.97 AL MES.</p>
+        </div>
+
+    <section class="tarjetas_planes">
+        
+        <div class="tarjeta_plan">  
+            <div class="texto_tarjetas-plan">
+                <p>PLAN</p>
+                <h2>FAMILIAR</h2>
+                <h3>$9.97 /MES</h3><br><br><br>
+
+                
+            </div>
+            <div class="pagar">
+                <a href="servicios.html">Comenzar</a>
+
+            </div>
+        </div>
+
+        <div class="tarjeta2">
+            <div class="texto_tarjetas2">
+                <p>PLAN</p>
+                <h2>PRO</h2><br>
+                <h3>$497.00 / Primer año
+                    y luego $19.97/mes después de 12 meses</h3><br><br>
+
+                   
+            </div>
+             <div class="pagar">
+                <a href="servicios.html">Comenzar</a>
+
+            </div>
+        </div>
+
+        <div class="tarjeta_plan">
+            <div class="texto_tarjetas-plan">
+                <p>PLAN</p>
+                <h2>EMPRESA</h2><br>
+                <h3>$699.97 / Pago único</h3><br><br>
+                
+               
+            </div>
+             <div class="pagar">
+                <a href="servicios.html">Comenzar</a>
+  
+            </div>
+        </div>
+
+
+
+    </section>
+
+
+
+
+
+
+   </main> 
+   
+   <footer id="footer">
+         &copy; 2026 Todos los derechos reservados. Global Virtual Opportunities Inc., EE. UU. <br><br>
+        <div class="redes">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="fa-brands fa-x-twitter"><i class="fab fa-instagram"></i></a>
+            <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></a>
+        </div> 
+   </footer>
+</body>
+</html>

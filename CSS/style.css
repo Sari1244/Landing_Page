@@ -497,10 +497,14 @@ hr{
     justify-content: center;
     margin-top: 50px;
 }
-
+.texto_venta h2{
+    text-align: center;
+    font-size: 35px;
+    color: #093483;
+}
 .texto_venta p{
 
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
 }
 .text-1{

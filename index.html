@@ -55,18 +55,18 @@
 <section class="contenedor-carrusel">
             <div id="carrusel1">
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Tu1TJ-iEqHw?si=rWkqCX0WMw9if19D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a class="flecha derecha" href="#carrusel2">></a>
-                <a class="flecha izquierda" href="#carrusel3"><</a>
+                <a class="flecha1 derecha" href="#carrusel2">></a>
+                <a class="flecha1 izquierda" href="#carrusel3"><</a>
             </div>
             <div id="carrusel2">
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/vt-gas3BlSM?si=JxUGBKn5WhJjXuvu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a class="flecha izquierda" href="#carrusel1"><</a>
-                <a class="flecha derecha" href="#carrusel3">></a>
+                <a class="flecha1 izquierda" href="#carrusel1"><</a>
+                <a class="flecha1 derecha" href="#carrusel3">></a>
             </div>
             <div id="carrusel3">
                 <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/8t1g0vu1LFw?si=16yv4SWNMuszmHNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <a class="flecha izquierda" href="#carrusel2"><</a>
-                <a class="flecha derecha" href="#carrusel1">></a>
+                <a class="flecha1 izquierda" href="#carrusel2"><</a>
+                <a class="flecha1 derecha" href="#carrusel1">></a>
             </div>
 
         </section>
@@ -76,6 +76,7 @@
             <a href="#carrusel2"></a>
             <a href="#carrusel3"></a>
         </section>
+        
 
     <div class="beneficios">
         <h2>Creemos que usted, y solo usted, debe controlar sus datos.</h2>
@@ -119,25 +120,96 @@
     </a>
     <hr>
 
-    <!-- <section class="nosotros" id="nosotros">
-        <img src="imagenes/informacion.jpg" alt="">
-    
+    <!-- Carrusel Testimonios/comentarios -->
+    <div class="carrusel">
+ 
+  <!-- Radio buttons ocultos -->
+  <input type="radio" name="slide" id="t1" checked />
+  <input type="radio" name="slide" id="t2" />
+  <input type="radio" name="slide" id="t3" />
+  <input type="radio" name="slide" id="t4" />
+  <input type="radio" name="slide" id="t5" />
+ 
+  <div class="carrusel-wrapper">
+ 
+    <!-- Flecha anterior -->
+    <div class="flecha flecha-prev">
+      <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>
+      <label for="t1"></label>
+      <label for="t2"></label>
+      <label for="t3"></label>
+      <label for="t4"></label>
+    </div>
+ 
+    <!-- Viewport -->
+    <div class="carrusel-viewport">
+      <div class="carrusel-track">
+ 
+        <div class="carrusel-slide">
+          <span class="avatar"><img src="imagenes/usuario.png" alt=""></span>
+          <div class="estrellas">★★★★★</div>
+          <p class="reseña">"Desde que uso este servicio, no me preocupo por perder mis archivos. Todo está seguro y accesible."</p>
+          <p class="nombre">María González</p>
+          <p class="rol">Diseñadora UX · Bogotá</p>
+        </div>
+ 
+        <div class="carrusel-slide">
+          <span class="avatar"><img src="imagenes/usuario.png" alt=""></span>
+          <div class="estrellas">★★★★★</div>
+          <p class="reseña">"Me encanta poder acceder a mis documentos desde cualquier dispositivo sin complicaciones."</p>
+          <p class="nombre">Carlos Herrera</p>
+          <p class="rol">Emprendedor · Medellín</p>
+        </div>
+ 
+        <div class="carrusel-slide">
+          <span class="avatar"><img src="imagenes/usuario.png" alt=""></span>
+          <div class="estrellas">★★★★☆</div>
+          <p class="reseña">"Muy buena calidad y atención al cliente. En general es una experiencia que recomendaría sin reservas a cualquier persona."</p>
+          <p class="nombre">Valentina Ríos</p>
+          <p class="rol">Gerente de Proyectos · Cali</p>
+        </div>
+ 
+        <div class="carrusel-slide">
+          <span class="avatar"><img src="imagenes/usuario.png" alt=""></span>
+          <div class="estrellas">★★★★★</div>
+          <p class="reseña">"Lo recomendaría sin dudarlo, ha sido una gran inversión."</p>
+          <p class="nombre">Andrés Molina</p>
+          <p class="rol">Desarrollador · Barranquilla</p>
+        </div>
+ 
+        <div class="carrusel-slide">
+          <span class="avatar"><img src="imagenes/usuario.png" alt=""></span>
+          <div class="estrellas">★★★★★</div>
+          <p class="reseña">"Antes perdía archivos todo el tiempo, ahora todo está respaldado automáticamente."</p>
+          <p class="nombre">Sofía Ramírez</p>
+          <p class="rol">Fotógrafa · Cartagena</p>
+        </div>
+ 
+      </div>
+    </div>
+ 
+    <!-- Flecha siguiente -->
+    <div class="flecha flecha-next">
+      <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg>
+      <label for="t2"></label>
+      <label for="t3"></label>
+      <label for="t4"></label>
+      <label for="t5"></label>
+    </div>
+ 
+  </div>
+ 
+  <!-- Puntos -->
+  <div class="carrusel-controles">
+    <label for="t1"></label>
+    <label for="t2"></label>
+    <label for="t3"></label>
+    <label for="t4"></label>
+    <label for="t5"></label>
+  </div>
+ 
+</div>
 
-        <aside class="aside">
-            <h2>¿Por qué nosotros?</h2><br>
-                <p>GotBackup es un servicio desarrollado por GVO (Global Virtual Opportunities), una empresa de marketing digital y software fundada en 1998 en Canadá. Con el tiempo, expandieron sus operaciones y construyeron un centro de datos en Texas en 2007 para mejorar su infraestructura.
-
-            En GotBackup, nuestra máxima prioridad es la seguridad de sus datos . La protección activa y pasiva de GotBackup está diseñada para proteger los datos del usuario mediante múltiples capas de seguridad, incluyendo el cifrado AES de 256 bits en todas partes.
-
-                Cifrado AES de 256 bits
-                Protocolos SSL/TLS
-                Autenticación de dos factores (2FA)
-                Control de versiones de archivos
-
-                Además, cuentan con sistemas avanzados como detección de accesos sospechosos y múltiples capas de protección para garantizar la seguridad de la información.</p>
-        </aside>
-    </section>
-<hr> -->
 
 <!-- Tarjetas Planes -->
          <div class="texto_venta">

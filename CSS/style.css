@@ -7,8 +7,8 @@
 }
 body{
     width: 100%;
-    height: 100vh;
-    background: rgb(235, 236, 242);
+    min-height: 100vh;
+    background: rgb(239, 240, 243);
     padding: 20px;
 }
 
@@ -94,7 +94,7 @@ body{
 /* Banner */
 .banner{
     height: 500px;
-    background: linear-gradient(135deg, #0c44ac, #e20505);
+    background: linear-gradient(135deg, #093483, #2599f8);
     padding: 0 40px;
     color: #fff;
     margin-top: 60px;
@@ -149,6 +149,8 @@ body{
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   scrollbar-width: none;
+    animation: slide 12s infinite;
+
 }
 
 .contenedor-carrusel div{
@@ -189,7 +191,7 @@ body{
     object-fit: cover;/* cuando se va ajustando la imagen se empieza a recortar para no perder calidad */
 }
 
-.flecha {
+.flecha1 {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -256,6 +258,209 @@ body{
 
 hr{
     border: 1px solid rgb(179, 176, 176);
+}
+
+
+/* Carrusel Testimonios */
+.carrusel {
+    --purple: #534AB7;
+    --purple-light: #EEEDFE;
+    --amber: #EF9F27;
+    --card-bg: #ffffff;
+    --texto: #08080e;
+    --texto-muted: #16161a;
+    --borde: rgba(83, 74, 183, 0.15);
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+ 
+  /* Inputs ocultos */
+  .carrusel input[type="radio"] {
+    display: none;
+  }
+ 
+  /* Wrapper relativo para colocar flechas encima */
+  .carrusel-wrapper {
+    position: relative;
+  }
+ 
+  /* Viewport */
+  .carrusel-viewport {
+    overflow: hidden;
+    border-radius: 16px;
+    border: 1px solid var(--borde);
+    background: var(--card-bg);
+  }
+ 
+  /* Track */
+  .carrusel-track {
+    display: flex;
+    width: 500%;
+    transition: transform 0.5s ease;
+  }
+ 
+  /* Posicionamiento por slide */
+  #t1:checked ~ .carrusel-wrapper .carrusel-track { transform: translateX(0%); }
+  #t2:checked ~ .carrusel-wrapper .carrusel-track { transform: translateX(-20%); }
+  #t3:checked ~ .carrusel-wrapper .carrusel-track { transform: translateX(-40%); }
+  #t4:checked ~ .carrusel-wrapper .carrusel-track { transform: translateX(-60%); }
+  #t5:checked ~ .carrusel-wrapper .carrusel-track { transform: translateX(-80%); }
+ 
+  /* Slide individual */
+  .carrusel-slide {
+    width: 20%;
+    padding: 2.5rem 3.5rem;
+    text-align: center;
+    box-sizing: border-box;
+  }
+ 
+  /* Avatar */
+  .avatar img{
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid var(--purple-light);
+    background: var(--purple-light);
+    font-size: 32px;
+    line-height: 72px;
+    display: block;
+    margin: 0 auto 1rem;
+    text-align: center;
+  }
+ 
+  /* Estrellas */
+  .estrellas {
+    color: var(--amber);
+    font-size: 18px;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+  }
+ 
+  /* Reseña */
+  .reseña {
+    font-style: italic;
+    font-size: 15px;
+    color: var(--texto-muted);
+    line-height: 1.75;
+    margin-bottom: 1.5rem;
+  }
+ 
+  /* Nombre y rol */
+  .nombre {
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--texto);
+    margin-bottom: 3px;
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+  .rol {
+    font-size: 13px;
+    color: #a0a0b0;
+    font-family: "Montserrat", sans-serif;
+  }
+ 
+  /* Flechas */
+  .flecha {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--borde);
+    background: var(--card-bg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: background 0.2s, border-color 0.2s;
+  }
+ 
+  .flecha:hover {
+    background: var(--purple-light);
+    border-color: var(--purple);
+  }
+ 
+  .flecha svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--purple);
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    pointer-events: none;
+  }
+ 
+  .flecha-prev { left: -18px; }
+  .flecha-next { right: -18px; }
+ 
+  /* Labels dentro de la flecha, superpuestos, ocultos por defecto */
+  .flecha label {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+  }
+ 
+  /* Prev: mostrar el label del slide anterior según cuál está activo */
+  #t1:checked ~ .carrusel-wrapper .flecha-prev label[for="t1"] { display: block; }
+  #t2:checked ~ .carrusel-wrapper .flecha-prev label[for="t1"] { display: block; }
+  #t3:checked ~ .carrusel-wrapper .flecha-prev label[for="t2"] { display: block; }
+  #t4:checked ~ .carrusel-wrapper .flecha-prev label[for="t3"] { display: block; }
+  #t5:checked ~ .carrusel-wrapper .flecha-prev label[for="t4"] { display: block; }
+ 
+  /* Next: mostrar el label del slide siguiente según cuál está activo */
+  #t1:checked ~ .carrusel-wrapper .flecha-next label[for="t2"] { display: block; }
+  #t2:checked ~ .carrusel-wrapper .flecha-next label[for="t3"] { display: block; }
+  #t3:checked ~ .carrusel-wrapper .flecha-next label[for="t4"] { display: block; }
+  #t4:checked ~ .carrusel-wrapper .flecha-next label[for="t5"] { display: block; }
+  #t5:checked ~ .carrusel-wrapper .flecha-next label[for="t5"] { display: block; }
+ 
+  /* Atenuar flechas en los extremos */
+  #t1:checked ~ .carrusel-wrapper .flecha-prev,
+  #t5:checked ~ .carrusel-wrapper .flecha-next {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+ 
+  /* Puntos */
+  .carrusel-controles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 1.25rem;
+  }
+ 
+  .carrusel-controles label {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(83, 74, 183, 0.2);
+    cursor: pointer;
+    display: block;
+    transition: background 0.3s, transform 0.3s;
+  }
+ 
+/* Solo el punto del slide activo: color fuerte */
+
+  #t1:checked ~ .carrusel-controles label[for="t1"],
+  #t2:checked ~ .carrusel-controles label[for="t2"],
+  #t3:checked ~ .carrusel-controles label[for="t3"],
+  #t4:checked ~ .carrusel-controles label[for="t4"],
+  #t5:checked ~ .carrusel-controles label[for="t5"] {
+    background: var(--purple);
+    transform: scale(1.4);
+  }
+
+/* pausa al pasar el mouse */
+.carrusel2:hover{
+    animation-play-state: paused;
 }
 
 /* icono flotante */
